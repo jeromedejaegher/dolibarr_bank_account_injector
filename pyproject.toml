@@ -1,0 +1,25 @@
+[project]
+name = "dolibarr_bank_account_injector"
+version = "0.9"
+description = "dolibarr_bank_account_injector is a streamlit app to securely inject bank statement. This app will use dolibarr API."
+requires-python = ">=3.12"
+dependencies = [
+"python-dotenv", 
+"streamlit",
+"loguru", 
+"numpy",
+"pandas",
+"openpyxl",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel>=0.37.1"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project.scripts]
+example-cli = "example_project.cli:main"
+
+[project.urls]
+Repository = "https://github.com/jeromedejaegher/dolibarr_bank_account_injector.git"

@@ -17,6 +17,34 @@ dolibarr_bank_account_injector, jerome dejaegher, 2026, https://github.com/jerom
 
 First, install Dolibarr and get a Dolikey
 
+Then, clone the repo : 
+
+```bash
+git clone https://github.com/jeromedejaegher/dolibarr_bank_account_injector.git
+cd dolibarr_bank_account_injector
+```
+
+create venv and activate it :
+```bash
+uv venv
+source .venv/bin/activate
+```
+
+install the package : 
+```bash
+uv pip install -e .
+```
+
 # Launch
 
 Use .sh (Linux) or .bat (Windows) file.
+
+run the app (linux): 
+```bash
+account_injector.sh
+```
+
+run the app (windows): 
+```bash
+account_injector.bat
+```
