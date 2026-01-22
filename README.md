@@ -24,6 +24,15 @@ git clone https://github.com/jeromedejaegher/dolibarr_bank_account_injector.git
 cd dolibarr_bank_account_injector
 ```
 
+Create a .env file at the root of the project and fill it with the ip adress of your dolibarr server and your API key : 
+
+```txt
+# Dolibarr adress and secrets
+
+"API_URL"=localhost # or 192.168.0.1 or ...
+"DOLAPIKEY"=your_api_key
+```
+
 create venv and activate it :
 ```bash
 uv venv
